@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thu vien city</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+    
+
+    <div class="row justify-content-center">
+        <!-- CỘT 1 LEFT -->
+        <div class="col-md-2 p-0 collapse collapse-horizontal show custom-backround-admin" id="openmenu" style="min-height: 100vh;">
+          <a class="navbar-brand d-block fs-5 px-4 mt-5 mb-2" href="#" style="color: white;"><i class="fa-solid fa-house"></i> TRANG QUẢN LÝ</a>
+          <table class="table border-top">
+              <tr>
+                <td scope="col" class="border-0 px-4"><i class="fa-solid fa-gauge"></i> <a href="" class="text-decoration-none ">TỔNG QUAN</a></td>
+              </tr>
+              <tr>
+                <td scope="col" class="border-0 px-4"><i class="fa-solid fa-user"></i><a href="" class="text-decoration-none "> TÀI KHOẢN</a></td>
+              </tr>
+              <tr>
+                <td scope="col" class="border-0 px-4"><i class="fa-solid fa-list"></i><a href="" class="text-decoration-none "> CHỦ ĐỀ</a></td>
+              </tr>
+              <tr>
+                <td scope="col" class="border-0 px-4"><i class="fa-solid fa-book"></i><a href="" class="text-decoration-none "> SÁCH</a></td>
+              </tr>
+          </table>
+        </div>
+
+        <div class="col-md-10 p-0">
+          <nav class="navbar navbar-expand-lg  custom-backround-admin ">
+            <div class="container-fluid ">
+                <button class="btn btn-outline-light " type="button" data-bs-toggle="collapse" data-bs-target="#openmenu" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand px-3 text-light" href="#">ADMIN THƯ VIỆN THÀNH PHỐ HCMLIB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        xin chao, Huynh Kha
+                      </a>
+                      <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-house"></i> Xem trang chủ</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+            <div class="container">
+                <h2 class="my-3">THÊM SÁCH</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tựa sách</label>
+                    <input type="text" class="form-control" name="tuasach" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Hình ảnh</label>
+                    <input type="text" class="form-control" name="hinhanh" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tác giả</label>
+                    <input type="text" class="form-control" name="tacgia" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Giá trị</label>
+                    <input type="text" class="form-control" name="giatri" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Mô tả</label>
+                    <input type="text" class="form-control" name="mota" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Số lượng/label>
+                    <input type="text" class="form-control" name="soluong" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ghim trang chủ</label>
+                    <input type="text" class="form-control" name="ghimtrangchu" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Số cảm nghĩ</label>
+                    <input type="text" class="form-control" name="socamnghi" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Lượt đọc</label>
+                    <input type="text" class="form-control" name="luotdoc" id=""  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Lượt xem</label>
+                    <input type="text" class="form-control" name="luotxem" id=""  >
+                  </div>
+                  
+                  <input type="submit" name="submit" class="btn custom-btn  " value="Xác nhận">
+            </div>
+        </div>
+    </div>
+        
+    
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

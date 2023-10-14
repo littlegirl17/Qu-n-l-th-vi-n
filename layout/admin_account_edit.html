@@ -1,0 +1,30 @@
+<form action="" method="post"></form>
+    <div class="container">
+        <h2 class="my-3">CHỈNH SỬA TÀI KHOẢN</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" name="sodienthoai" id="" value="<?=$sodienthoai?>"  >
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Mật khẩu</label>
+            <input type="text" class="form-control" name="matkhau" id="" value="<?=$matkhau?>" >
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Họ tên</label>
+            <input type="text" class="form-control" name="hoten" id=""  value="<?=$hoten?>">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ví tiền</label>
+            <input type="text" class="form-control" name="vitien" id=""  value="<?=$vitien?>">
+        </div>
+        
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Quyền truy cập</label>
+            <select class="form-select" aria-label="Default select example" name="quyen" value="<?=$quyen?>">
+                <option value="0" selected>Người đọc</option>
+                <option value="1">Quản lý</option>
+            </select>
+        </div>
+        <input type="submit" name="submit" class="btn custom-btn  " value="Xác nhận">
+    </div>
+</form>

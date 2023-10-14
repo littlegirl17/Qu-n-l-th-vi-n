@@ -1,0 +1,91 @@
+/*màu nền thanh header*/
+.custom-navbar-bg{
+    background-color: rgb(224, 6, 115);
+}
+/*màu chữ thanh header*/
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+/* chiều cao của banner index*/
+.carousel-item img{
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+}
+/**/
+.carousel-item-banneritem img{
+    width: 100%;
+    height: 205px; 
+    object-fit: cover;
+}
+/* chiều cao của banner cart*/
+.carousel-item-cart img{
+    height: 455px; 
+    object-fit: cover;
+}
+/*mau backround*/
+.custom-backround {
+    background-color: rgb(224, 6, 115);
+    color: white;
+}
+/*backround admin*/
+.custom-backround-admin{
+    background-color: rgb(224, 6, 115);
+    color: white;
+}
+/*backround admin header left của admin*/
+.custom-backround-admin tr td { 
+    background-color: rgb(224, 6, 115);
+    color: white;
+}
+.custom-backround-admin tr td:hover {
+    background-color: white;
+    color: rgb(224, 6, 115);
+    text-decoration: none;
+}
+.custom-backround-admin tr td a{
+    color: white;
+}
+.custom-backround-admin tr td a:hover{
+    text-decoration: none;
+    background-color: white;
+    color:rgb(224, 6, 115) ;
+}
+
+/*button mượn trong box-sách*/
+.custom-btn {
+    background-color: rgb(224, 6, 115);
+    color: white;
+}
+.custom-btn:hover {
+    background-color: white;
+    color: rgb(224, 6, 115);
+    border: 1px solid rgb(224, 6, 115);
+}
+/*Tiêu đề sách của từng box sản phẩm*/
+.custom-h5{
+    color: #a8a7a7;
+}
+.custom-h5:hover{
+    color: rgb(0, 0, 0);
+}
+/*Đây là box sản phẩm khi hover*/
+.card:hover{
+    box-shadow: rgb(224, 6, 115) 0px 0px 0px 3px;
+}
+/*Input tăng giảm số lượng*/
+.custom-input{
+    text-align: center;
+    font-size: 12px; /* Điều chỉnh kích thước font */
+    max-width: 35px;    /* Điều chỉnh kích thước input */
+    height: 30px;   /* Điều chỉnh kích thước input */
+}
+/*chiều cao-rộng của ảnh trong trang chi tiết*/
+.custom-height-large img{
+    max-width: 400px;
+    min-height: 420px;
+    object-fit: cover;
+    margin-left: -70px;
+    margin-top: -10px;
+}
+
