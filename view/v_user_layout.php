@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thu vien city</title>
+    <title>Thư viện Thành Phố</title>
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <!--Font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
@@ -52,11 +52,12 @@
                         </a>
                     </li>
                     
-                    <?php if(!isset($_SESSION['user'])): ?> <!-- Nếu mà nó chưa tồn tại session['user'] thì mình cho nó hiện "Đăng Nhạp lên cho mình đăng nhập vào" -->
+                    <?php if(!isset($_SESSION['user']) && empty($_SESSION['user'])): ?> <!-- Nếu mà nó chưa tồn tại session['user'] thì mình cho nó hiện "Đăng Nhạp lên cho mình đăng nhập vào" -->
                         <a class="nav-link dropdown-toggle" href="?mod=user&act=login" >Đăng nhập</a>     <!-- <a class="nav-link dropdown-toggle" href="?mod=user&act=login" role="button" data-bs-toggle="dropdown" aria-expanded="false">Đăng nhập</a> -->
                     <?php else: ?> <!-- chỗ này là else (nếu nó tồn tại thì hiện lên -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <?php if(isset($_SESSION['user'])): ?>
                         xinchao,<?=$_SESSION['user']['HoTen']?></a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">thong tin taikhoan</a></li>
@@ -70,6 +71,7 @@
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="?mod=user&act=logout">Đăng xuất</a></li>
                         </ul>
+                        <?php endif; ?>
                     </li>
                     <?php endif; ?>
                 </ul>

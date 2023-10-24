@@ -21,28 +21,29 @@
             ?>
         </ul>
     </div>
-            <!-- BOX RIGHT '9' MAIN -->
-            <div class="col-md-9 mt-5">
-                <!-- LOGIN -->
-                <h2>Đăng nhập</h2>
-                <?php if(isset($_SESSION['loi'])):?><!--Kiểm tra biến thông báo lỗi-->
-                    <div class="alert alert-danger" role="alert">
-                        <?=$_SESSION['loi']?>
-                    </div>
-                <?php endif; unset($_SESSION['loi']); ?> <!--Và nếu nó thông báo lỗi xong rồi thì xóa nó đi, nếu ko nó sẽ hiện hoài như dậy á -->
-                <form action="" method="POST">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Số điện thoại</label>
-                        <input type="text"  name="SoDienThoai" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-                        <input type="password" name="MatKhau" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn custom-btn">Đăng nhập</button>
-                </form>
-                
+    
+    <!-- BOX RIGHT '9' MAIN -->
+    <div class="col-md-9 mt-5">
+        <!-- LOGIN -->
+        <h2>Đăng nhập</h2>
+        <?php if(isset($_SESSION['loi'])):?><!--Kiểm tra biến thông báo lỗi-->
+            <div class="alert alert-danger" role="alert">
+                <?=$_SESSION['loi']?>
             </div>
-        </div>
+        <?php endif; unset($_SESSION['loi']); ?> <!--Và nếu nó thông báo lỗi xong rồi thì xóa nó đi, nếu ko nó sẽ hiện hoài như dậy á -->
+        
+        <form action="" method="POST">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Số điện thoại</label>
+                <input type="text"  name="SoDienThoai" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                <input type="password" name="MatKhau" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn custom-btn">Đăng nhập</button>
+        </form>
+        
+    </div>
 
     
